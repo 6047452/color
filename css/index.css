@@ -1,0 +1,176 @@
+html body {
+  width: 100%;
+}
+#header {
+  background-color: #ff841d;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+}
+#header .header_logo {
+  float: left;
+}
+#header .header_logo a img {
+  height: 25px;
+}
+#header .header_app {
+  float: right;
+}
+#header .header_app a img {
+  width: 34px;
+  height: 34px;
+}
+#header .header_logo a img {
+  height: 25px;
+}
+#header .header_app {
+  float: right;
+}
+#header .header_app a img {
+  width: 34px;
+  height: 34px;
+}
+#search {
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  padding-right: 70px;
+  border-bottom: 1px solid #ccc;
+}
+#search form .searchbox {
+  width: 100%;
+  height: 30px;
+  background-color: yellowgreen;
+  border: none;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+#search form .searchbtn {
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+  background-color: #ff841d;
+  border: none;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 14px;
+}
+#menu {
+  font-size: 12px;
+}
+#menu .row {
+  padding: 10px 0px;
+}
+#menu .row a {
+  display: block;
+  text-align: center;
+}
+#menu .row img {
+  width: 50px;
+  height: 50px;
+}
+#dissale {
+  width: 100%;
+  height: 35px;
+  background-color: #ff841d;
+}
+#dissale span {
+  line-height: 35px;
+  overflow: hidden;
+  color: #fff;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#dissale img {
+  width: 20px;
+  float: right;
+  padding-top: 8px;
+}
+#dissaleList {
+  padding: 10px 0px;
+}
+#dissaleList .media {
+  border-bottom: 1px solid #a1a1a1;
+  padding: 10px;
+  padding-top: 0px;
+}
+#dissaleList .media a img {
+  width: 100px;
+  height: 100px;
+}
+#dissaleList .media div p span {
+  color: #a1a1a1;
+}
+#dissale .dissaleMore {
+  padding: 10px;
+}
+#dissale .dissaleMore a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #a1a1a1;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  color: #000;
+  background-color: pink;
+}
+.dissaleTitle {
+  background-color: #ff841d;
+  height: 35px;
+  width: 100%;
+  padding: 0 10px;
+}
+.dissaleTitle h4 {
+  padding-top: 8px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.dissaleTitle h4 img {
+  width: 20px;
+  float: right;
+}
+#footer {
+  text-align: center;
+}
+#footer div {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+#footer div div {
+  border: 1px solid #a1a1a1;
+}
+#footer div div a {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+#footer div div a img {
+  width: 15px;
+  margin-top: -3px;
+}
+#footer div .width30 {
+  width: 30%;
+  float: left;
+}
+#footer div .width40 {
+  width: 40%;
+  float: left;
+}
+#footer p a *:first-child {
+  color: red;
+}
+#footer p a *:nth-child(2) {
+  color: #000;
+}
+#footer p a *:nth-child(3) {
+  color: #ccc;
+}

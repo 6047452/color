@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+
+<body>
+
+    <!--header  start-->
+    <header id="header">
+        <div class="header_logo">
+            <a href="#"><img src="./images/header_logo.png" alt=""></a>
+        </div>
+        <div class="header_app">
+            <a href="#"><img src="./images/header_app.png" alt=""></a>
+        </div>
+    </header>
+    <!--header  end-->
+
+    <!--section   start-->
+    <section id="search">
+        <form action="搜索提交地址">
+            <input class="searchbox" type="text" placeholder="   慢慢搜" />
+            <input class="searchbtn" type="button" value="搜索" />
+        </form>
+
+    </section>
+
+
+    <srction id="categoryMenu">
+        <ul>
+            <li class="categroyTitle categroyTitle0"><span>大家电</span></li>
+            <div class="categroyList categroyList0 row">
+                <div class="categroyConten col-xs-4"><a href="#">电视</a></div>
+                <div class="categroyConten col-xs-4"><a href="#">电视</a></div>
+                <div class="categroyConten col-xs-4"><a href="#">电视</a></div>
+                <div class="categroyConten col-xs-4"><a href="#">电视</a></div>
+                <div class="categroyConten col-xs-4"><a href="#">电视</a></div>
+                <div class="categroyConten col-xs-4"><a href="#">电视</a></div>
+            </div>
+
+        </ul>
+    </srction>
+
+    <footer id="footer">
+        <div>
+            <div class="width30"><a href="跳转">登陆</a></div>
+            <div class="width30"><a href="跳转">登陆</a></div>
+            <div class="width40"><a href="跳转"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt=""/>登陆</a></div>
+        </div>
+        <p>
+            <a href="跳转">
+            <span> 手机APP下载 </span><span>慢慢买手机版</span><span>-掌上比价平台</span>
+        </a>
+        </p>
+        <a href="#">m.manmanbuy.com</a>
+
+    </footer>
+
+   <!--categoryTitleTpl start-->
+<script type="text/html" id="categoryTitleTpl">
+    {{each data as value index}}
+        <li class="categroyTitle categoryTitle{{value.titleId}}" titleId='{{value.titleId}}'><span>{{value.title}}</span><i></i></li>
+        <div class="categoryList categoryList{{value.titleId}} row"></div>
+    {{/each}}
+    
+    </script>
+    <!--categoryTitleTpl end-->
+    
+    <!--categoryListTpl start-->
+    <script type="text/html" id="categoryListTpl">
+        {{each data as value index}}
+        <div class="categoryContent col-xs-4" categoryId="{{value.categoryId}}"> <a href="./productlist.html?categoryId={{value.categoryId}}">{{value.category}}</a></div>
+        {{/each}}
+    
+    </script>
+
+
+
+
+        <script src="./lib/jquery/jquery.js"></script>
+        <!-- <script src="./js/url.js"></script> -->
+        <script src="./lib/zepto.js/dist/zepto.js"></script>
+        <script src="./lib/zepto.js/src/event.js"></script>
+        <script src="./lib/zepto.js/src/selector.js"></script>
+        <script src="./lib/zepto.js/src/ajax.js"></script>
+        <script src="./js/template.js"></script>
+        <script src="./js/category.js"></script>
+</body>
+
+</html>
